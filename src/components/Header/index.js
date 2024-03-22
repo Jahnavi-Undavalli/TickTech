@@ -22,7 +22,7 @@ const Header = ({ theme, toggleTheme }) => {
         </div>
         <div className="nav-bar-large-container">
         <Link to="/" className="nav-link"> 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEa-9mcv9rcxqrtVZjAjMhrCbaMEXm7P9QjiLYSgv0w&s" className={`website-logo ${logoClass}`}/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEa-9mcv9rcxqrtVZjAjMhrCbaMEXm7P9QjiLYSgv0w&s" alt="" className={`website-logo ${logoClass}`}/>
         </Link>
           <Link to="/" className="nav-link"> 
             <h1 className='heading'>Jahnavi Undavalli</h1>
