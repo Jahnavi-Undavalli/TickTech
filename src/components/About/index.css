@@ -1,0 +1,57 @@
+
+.home-container1{
+    display: flex;
+    flex-direction: column;  
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 90%;
+    max-width: 1110px;
+}
+
+.home-container-light-mode {
+    color: black;
+}
+
+.heading1 {
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    font-weight: normal;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+.dark-mode .heading1,
+.dark-mode .paragraph1,
+.dark-mode .paragraph2,
+.dark-mode .paragraph3,
+.dark-mode .paragraph4 {
+    color: white;
+}
+
+.name-container1{
+    display: flex;
+    flex-direction: row;
+}
+
+.horizantal-line1{
+    background-color: grey;
+    height: 1px;
+    width:70%;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.message{
+    font-weight: bold;
+}
