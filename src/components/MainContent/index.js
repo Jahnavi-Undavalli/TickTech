@@ -13,7 +13,7 @@ const MainContent = ({ theme }) => {
           <h1 className={`home-heading ${theme === 'dark' ? 'dark-mode' : ''}`}>I'm <span className='ceo-name'>Anish </span></h1>
           <img
             src="https://media.istockphoto.com/id/825083568/photo/proud-latin-man.webp?b=1&s=170667a&w=0&k=20&c=CyG-7qRsTApt2se9eMhc-iPBHMj5Yj-ISytCWd3uZzQ="
-            alt="profile-image"
+            alt=""
             className="profile-mobile-img"
           />
           <p className={`home-description ${theme === 'dark' ? 'dark-mode' : ''}`}>
@@ -32,7 +32,7 @@ const MainContent = ({ theme }) => {
           src="https://media.istockphoto.com/id/825083568/photo/proud-latin-man.webp?b=1&s=170667a&w=0&k=20&c=CyG-7qRsTApt2se9eMhc-iPBHMj5Yj-ISytCWd3uZzQ="
          
           className="profile-image"
-          alt="Profile Image"
+          alt=""
         />
       </div>
     </>
