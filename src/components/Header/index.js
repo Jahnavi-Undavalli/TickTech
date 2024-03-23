@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MdDarkMode } from 'react-icons/md'; 
 import { FiSun } from 'react-icons/fi';
+import { FcAbout } from "react-icons/fc";
 import './index.css';
 
 const Header = ({ theme, toggleTheme }) => {
@@ -22,7 +23,7 @@ const Header = ({ theme, toggleTheme }) => {
         </div>
         <div className="nav-bar-large-container">
         <Link to="/" className="nav-link"> 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEa-9mcv9rcxqrtVZjAjMhrCbaMEXm7P9QjiLYSgv0w&s" alt="" className={`website-logo ${logoClass}`}/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEa-9mcv9rcxqrtVZjAjMhrCbaMEXm7P9QjiLYSgv0w&s" className={`website-logo ${logoClass}`}/>
         </Link>
           <Link to="/" className="nav-link"> 
             <h1 className='heading'>Jahnavi Undavalli</h1>
@@ -54,7 +55,7 @@ const Header = ({ theme, toggleTheme }) => {
               </Link>
             </li>
             <li className="nav-menu-item">
-              <Link to="/contact" className="nav-link">
+              <Link to="/about" className="nav-link">
                 Contact
               </Link>
             </li>
@@ -66,6 +67,43 @@ const Header = ({ theme, toggleTheme }) => {
           </ul>
         </div>
       </div>
+
+
+      <div className= {` nav-menu-mobile  nav-header ${darkModeClass} ${borderBottomClass}`}>
+        <ul className="nav-menu-list-mobile">
+          <Link to="/">
+            <li className="nav-menu-item-mobile">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
+                alt="nav home"
+                className="nav-bar-image"
+              />
+            </li>
+          </Link>
+          <Link to="/about">
+            <li className="nav-menu-item-mobile  about-icon">
+            <FcAbout   alt="nav products"
+                className="nav-bar-image" />
+             
+            </li>
+          </Link>
+          <Link to="/about">
+            <li className="nav-menu-item-mobile">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                alt="nav cart"
+                className="nav-bar-image"
+              />
+            </li>
+          </Link>
+          <li className="nav-menu-item">
+              <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
+                {theme === 'light' ? <MdDarkMode /> : <FiSun className='image-light' />}
+              </div>
+            </li>
+        </ul>
+      </div>
+
     </nav>
   );
 }
