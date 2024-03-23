@@ -1,154 +1,170 @@
+
+.show-menu {
+  display: flex;
+}
+
 .nav-header {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgb(243, 243, 243);
-    height: 80px; 
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  height: 80px; 
+}
+
+@media screen and (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    border-bottom-style: none;
   }
-  
-  @media screen and (max-width: 768px) {
-    .nav-header {
-      flex-direction: column;
-      align-items: center;
-      border-bottom-style: none;
-    }
-  }
-  
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1110px;
+  padding-top: 15px;
+  padding-bottom: 15px; 
+}
+
+@media screen and (max-width: 768px) {
   .nav-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1110px;
-    padding-top: 15px;
-    padding-bottom: 15px; 
+    flex-direction: column;
   }
-  
-  @media screen and (max-width: 768px) {
-    .nav-content {
-      flex-direction: column;
-    }
-  }
-  
+}
+
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
   .nav-bar-mobile-logo-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    display: none;
   }
-  
-  @media screen and (min-width: 768px) {
-    .nav-bar-mobile-logo-container {
-      display: none;
-    }
+
+  .nav-menu-mobile {
+    display: none;
   }
-  
+}
+
+.nav-bar-large-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+}
+
+@media screen and (max-width: 767px) {
   .nav-bar-large-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1110px;
+    display: none;
   }
-  
-  @media screen and (max-width: 767px) {
-    .nav-bar-large-container {
-      display: none;
-    }
-  }
-  
+}
+
+.website-logo {
+  width: 10px;
+}
+
+@media screen and (min-width: 768px) {
   .website-logo {
-    width: 10px;
+    width: 55px;
+    border-radius: 30px;
+    margin: 5px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .website-logo {
-      width: 55px;
-      border-radius: 30px;
-      margin:5px;
-    }
+
+  .nav-menu-mobile {
+    display: none;
   }
-  
-  .nav-menu {
+}
+
+/* Styles for the main navigation menu */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-menu-item {
+  font-family: 'Times new Roman';
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: black; /* Default color */
+  padding: 8px 12px; /* Padding around each nav item */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #475569;
+}
+
+.nav-menu-item-mobile {
+  margin: 0px;
+  cursor: pointer;
+  color: black;
+  padding: 8px 12px; /* Padding around each nav item */
+}
+
+/* Styles for the mobile menu */
+.nav-menu-mobile {
+  display: none; /* Hide the mobile menu by default */
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for small screens */
+  .nav-menu-mobile {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-self: flex-end;
-    flex: 1;
-    list-style-type: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-  .nav-menu-item {
-    font-family: 'Times new Roman';
-    text-decoration: none;
-    margin: 10px;
-    font-weight: 400;
-    font-size: 15px;
-    color: black; /* Default color */
-    padding: 8px 12px; /* Padding around each nav item */
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #475569;
-  }
-  
-  .nav-menu-item-mobile {
-    margin: 0px;
-    cursor: pointer;
-    color: black;
-    padding: 8px 12px; /* Padding around each nav item */
-  }
-  
-  .logout-desktop-btn {
-    font-family: 'Times new Roman';
-    font-weight: 600;
-    font-size: 10px;
-    padding: 8px 16px;
-    color: black; /* Default color */
-    background-color: #0967d2;
-    border: none;
-    border-radius: 4px;
-    margin-left: 14px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .nav-mobile-btn-container {
-    display: flex;
-    justify-content: center;
-    width: 25%;
-  }
-  
-  .nav-mobile-btn {
-    border: none;
-    padding: 0px;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .nav-bar-image {
-    width: 14px;
-  }
-  
-  .heading {
-    font-family: "Times New Roman";
-    color: black; 
-     font-size: 20px;
+    justify-content: space-around;
    
+    border-top: 1px solid rgb(243, 243, 243);
   }
-  
-  .nav-header.dark-mode .nav-link,
-  .nav-header.dark-mode .heading {
-    color: white;
+
+  .nav-menu-list-mobile {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
   }
-  
-  .image-light {
-    color: yellow;
+
+  .nav-menu-item-mobile {
+    margin: 0;
+    padding: 15px;
   }
-  
-  .dark-logo {
-    background-color: black;
-  }
-  
+
+}
+
+.nav-bar-image {
+  width: 24px;
+}
+
+.heading {
+  font-family: "Times New Roman";
+  color: black; 
+  font-size: 20px;
+}
+
+.nav-header.dark-mode .nav-link,
+.nav-header.dark-mode .heading {
+  color: white;
+}
+
+.image-light {
+  color: yellow;
+}
+
+.dark-logo {
+  background-color: black;
+}
+
+.about-icon{
+  color:grey;
+  background-color: light grey;
+}
