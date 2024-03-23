@@ -1,4 +1,3 @@
-
 .home-container1{
     display: flex;
     flex-direction: column;  
@@ -54,4 +53,13 @@
 
 .message{
     font-weight: bold;
+}
+
+/* Decrease the height of horizontal line in mobile devices */
+@media screen and (max-width: 768px) {
+    .horizantal-line1 {
+        height: 1px;
+         width:50%;
+        margin-top: 30px; /* Adjust the margin-top as needed */
+    }
 }
