@@ -57,6 +57,13 @@
     .profile-image {
       display: none;
     }
+
+    .profile-mobile-img{
+      width: 40%;
+      margin:10px;
+      max-width: 450px;
+     
+    }
   }
   
   .home-heading {
